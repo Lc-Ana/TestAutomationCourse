@@ -9,16 +9,18 @@ enum isPet {UNKNOWN, YES, NO}
 enum vaccinated {UNKNOWN, YES, NO}
 
 public abstract class Animal {
-    public Animal(int animalId, int ageCategory) {
+    public Animal(int animalId, String name, int age) {
         this.animalId = animalId;
-        this.ageCategory = ageCategory;
+        this.name = name;
+        this.age = age;
     }
 
     ;
 
     private int animalId;
     private gender gender;
-    private int ageCategory;
+    private int age;
+    private String name;
     private provideProducts provideProducts;
     private isPet isPet;
     private vaccinated vaccinated;
@@ -39,13 +41,15 @@ public abstract class Animal {
         this.gender = gender;
     }
 
-    public int getAgeCategory() {
-        return ageCategory;
+    public int getAge() {
+        this.age = age;
+        return age;
     }
 
-    public void setAgeCategory(int ageCategory) {
-        this.ageCategory = ageCategory;
+    public void setAge(int age) {
+        this.age = age;
     }
+
 
     public md.tekwill.topic6.provideProducts getProvideProducts() {
         return provideProducts;
@@ -71,13 +75,22 @@ public abstract class Animal {
         this.vaccinated = vaccinated;
     }
 
-    protected abstract void eats();
+    public String getName() {
+        this.name = name;
+        return name;
+    }
 
-    protected abstract void makesSounds();
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    protected abstract void movement();
+    protected abstract void setAgeCategory(int age);
 
-    protected abstract int numberOfAnimals();
+    protected abstract void eats(String dayOfWeek);
+
+    protected abstract void makesSounds(String saySomething);
+
+
 
 
 }
