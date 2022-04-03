@@ -11,8 +11,8 @@ public class Main {
         ion.setCurrentSum(5000.0);
         maria.setCurrentSum(2000.0);
 
-        ion.transferToPersonDataFileExceptionThrows("C:\\Users\\Ana\\Desktop\\lectia5\\TestAutomationCourse\\src\\md\\tekwill\\topic4\\Methods.java");
-        ion.transferToPersonDataFileExceptionTryCatch("C:\\Users\\Ana\\Desktop\\lectia5\\TestAutomationCourse\\src\\md\\tekwill\\topic4\\Hello.java");
+        ion.transferToPersonDataFileExceptionThrows("src\\md\\tekwill\\topic4\\Methods.java");
+        ion.transferToPersonDataFileExceptionTryCatch("src\\md\\tekwill\\topic4\\Hello.java");
 
         System.out.println("Introduce the number of persons: ");
         Scanner scan = new Scanner(System.in);
