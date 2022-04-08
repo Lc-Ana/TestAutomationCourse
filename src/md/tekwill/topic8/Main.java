@@ -6,7 +6,7 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws IOException {
 
-        String caleFisier = "C:\\Users\\Ana\\Desktop\\lectia5\\TestAutomationCourse\\src\\md\\tekwill\\topic8\\Text1.txt";
+        String caleFisier = "src\\md\\tekwill\\topic8\\Text1.txt";
 
         String date001 = "Hello.";
         String date002 = " My name is Kim.";
@@ -38,7 +38,7 @@ public class Main {
         }
         ;
 
-        String caleNoua = "C:\\Users\\Ana\\Desktop\\lectia5\\TestAutomationCourse\\src\\md\\tekwill\\topic6";
+        String caleNoua = "src\\md\\tekwill\\topic6";
         File fileManipulare = new File(caleNoua);
 
         if (fileManipulare.isFile()) {
